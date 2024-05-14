@@ -7,6 +7,7 @@ import SearchResult from "./pages/SearchResult";
 function App() {
   return (
     <div>
+      {/* hello */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
