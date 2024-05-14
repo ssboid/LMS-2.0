@@ -1,10 +1,10 @@
 
 import React from 'react'
-
+import coverbook from "../assets/brand/coverbook.png";
 const Home = () => {
     return (
       <div>
-        Home
+        <img src={coverbook} class="banner"></img>
       </div>
     );
   }
