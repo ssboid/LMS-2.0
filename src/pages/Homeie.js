@@ -99,7 +99,7 @@ const Home = () => {
             </a>
           </p>
         </div>
-        <span style={{color: "red"}}>b</span>
+        a
         {/* "new section" heading */}
         <div className="labels">
           <div className="labelheading">

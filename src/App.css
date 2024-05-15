@@ -1,3 +1,4 @@
+
 .pagehead {
   width: 100%;
   height: 80px;
@@ -19,16 +20,23 @@
   align-content: stretch;
 }
 
-.row{
-  width: 60%;
-  margin-left: 15%;
-  margin-right: 15%;
-  min-height: 675px;
-  padding: 5%;
-  display: flex;
+.row {
+  width: 100%;
+  height: auto;
   background-color: blueviolet;
+  margin-top: -30px;
+  min-height: 675px;
+  height: auto;
 }
 
+.home {
+  background-color: #2d2d2d;
+  /* padding: 5%;
+  width: 60%;
+  margin-left: 15%;
+  margin-right: 15%; */
+  
+}
 
 #logo {
   height: 50px;
@@ -108,7 +116,7 @@ ul {
 
 .headlink {
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -118,7 +126,7 @@ ul {
   text-decoration: none;
 }
 
-.link{
+.link {
   text-decoration: none;
 }
 
@@ -156,15 +164,10 @@ ul {
   cursor: pointer;
 }
 
-.sear{
+.sear {
   font-size: 18px;
   margin: -10px;
 }
-
-.main-body{
-  background-color: darkgray;
-}
-
 
 /* newsletter */
 .newsletterbox {
@@ -175,19 +178,24 @@ ul {
   flex-direction: column;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 .newssub {
   height: 230px;
   width: 100%;
-  background-image: linear-gradient(to right top, #e37100, #e36a00, #e36201, #e35a02, #e35205);
+  background-image: linear-gradient(
+    to right top,
+    #e37100,
+    #e36a00,
+    #e36201,
+    #e35a02,
+    #e35205
+  );
   text-align: center;
   color: white;
   padding-top: 50px;
   border-radius: 20px;
-
 }
 
 .newsletterform {
@@ -197,7 +205,7 @@ ul {
 .nlfinput {
   height: 30px;
   width: 240px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 8px;
   color: gray;
   margin: 10px;
@@ -208,7 +216,7 @@ ul {
 #nlfsubmit {
   height: 50px;
   width: 150px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 8px;
   color: rgb(255, 255, 255);
   background-color: #2d2d2d;
@@ -216,7 +224,6 @@ ul {
   border-style: none;
   margin: 10px;
   font-size: 18px;
-
 }
 
 #nlfsubmit:hover {
@@ -261,8 +268,154 @@ ul {
   margin-bottom: 25px;
 }
 
-#profileprofile{
+#profileprofile {
   text-decoration: none;
   color: #e35200;
   cursor: pointer;
+}
+
+.slg {
+  width: 67%;
+  margin-left: 140px;
+  font-family: "Times New Roman";
+}
+
+.welc {
+  height: 250px;
+  margin-top: 150px;
+  padding: 0% 15%;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcbox {
+  background-color: rgb(224, 224, 224);
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.welchead {
+  font-size: 50px;
+  text-align: left;
+}
+
+.welctxt {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.labels {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.labelheading {
+  font-size: 50px;
+}
+
+.labelsubheading {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+#king {
+  margin-top: 30px;
+  padding-top: 90px;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+#ful {
+  margin-top: 50px;
+  font-size: 20px;
+  width: 85%;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+#pagebanner {
+  background-image: url(../src/assets/brand/coverbook.png);
+  width: 100%;
+  height: 760px;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.introbody {
+  margin-top: -280px;
+}
+
+.displaybox {
+  height: 390px;
+  width: 100%;
+  /* padding: 0% 15%; */
+  float: left;
+  font-family: "Poppins", sans-serif;
+  /* background-color: aquamarine; */
+  margin-bottom: 135px;
+}
+hpbooks {
+  height: 90%;
+  width: 80%;
+  margin: auto;
+  /* background-color: darkgreen; */
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.seemore {
+  color: #e35200;
+  float: right;
+  margin-right: 10%;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+.hpbooks ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.hpbooks ul li {
+  list-style: none;
+  margin: 0% 3%;
+}
+
+.hpimage {
+  height: 350px;
+  width: 250px;
+  /* background-color: darkseagreen; */
+}
+
+.bimage {
+  height: 350px;
+  width: 250px;
+}
+
+.bimage:hover {
+  width: 260px;
+  height: 360px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.42);
+}
+
+.barrier {
+  cursor: pointer;
+}
+
+.bname {
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  /* background-color:olivedrab; */
+  color: #e35200;
+  text-decoration: none;
 }
