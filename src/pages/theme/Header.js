@@ -31,7 +31,7 @@ const Header = () => {
           <li>
             <form action="user?page=userbsearch" method="post">
               <input type="search" name="query" id="search" placeholder="Search..." />
-              <button type="submit" className="search_button"><i class="sear" className="fas fa-search sear"></i></button>
+              <button type="" className="search_button"><Link to="/search" className="link"><i class="sear" className="fas fa-search sear"></i></Link></button>
             </form>
           </li>
           </div>
