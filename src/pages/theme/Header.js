@@ -47,9 +47,9 @@ const Header = () => {
                   <li className="browselink browse"><span>BROWSE</span></li>
                 </Link>
                 <li>
-                  <form action="user?page=userbsearch" method="post">
-                    <input type="search" name="query" id="search" placeholder="Search..." />
-                    <button type="" className="search_button"><Link to="/search" className="link"><i className="sear fas fa-search sear"></i></Link></button>
+                  <form>
+                    <input type="search" name="query" className="search" placeholder="Search..." />
+                    <Link to="/search" className="link"><button type="" className="search_button"><i className="sear fas fa-search sear"></i></button></Link>
                   </form>
                 </li>
               </div>
