@@ -1,13 +1,10 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import coverbook from "../assets/brand/coverbook.png";
 import b1984 from "../assets/bookimages/b1984.png";
 import hhgg from "../assets/bookimages/hhgg.jpg";
 import htwf from "../assets/bookimages/htwf.jpg";
 import lm from "../assets/bookimages/lm.jpg";
-// import b1984 from "../assets/bookimages/b1984.png";
-// import b1984 from "../assets/bookimages/b1984.png";
-// import b1984 from "../assets/bookimages/b1984.png";
-// import b1984 from "../assets/bookimages/b1984.png";
 const Home = () => {
   return (
     <div className="home">
@@ -99,7 +96,7 @@ const Home = () => {
             </a>
           </p>
         </div>
-        <span style={{color: "red"}}>b</span>
+
         {/* "new section" heading */}
         <div className="labels">
           <div className="labelheading">
@@ -114,12 +111,14 @@ const Home = () => {
           <div className="hpbooks">
             <ul>
               <li>
-                <div className="hpimage">
-                  <div>
-                    <img src={b1984} alt="1984" className="bimage" />
+                <Link to="/book" className="link">
+                  <div className="hpimage">
+                    <div>
+                      <img src={b1984} alt="1984" className="bimage" />
+                    </div>
+                    <div className="bname">1984</div>
                   </div>
-                  <div className="bname">1984</div>
-                </div>
+                </Link>
               </li>
               <li>
                 <div className="hpimage">

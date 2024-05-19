@@ -10,7 +10,7 @@ const Footer = () => {
             Subscribe to our newsletter
           </div>
           <div className="newsletterform">
-            <form action="user?page=subscribe" method="post">
+            <form >
               <input type="text" className="nlfinput" name="nlname" placeholder="Name.." />
               <input type="text" className="nlfinput" name="nlemail" placeholder="email@email.com" />
               <input type="submit" id="nlfsubmit" name="nlsend" value="Subscribe" />

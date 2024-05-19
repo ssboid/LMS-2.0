@@ -2,8 +2,10 @@
 .pagehead {
   width: 100%;
   height: 80px;
+  background-color: #2d2d2d;
+  
 }
-/* dqwiudodqowdqo[wnco[widnvwoenvwoenvowenfvowenfowenfc */
+
 .header {
   height: 80px;
   width: 100%;
@@ -18,19 +20,26 @@
   justify-content: space-between;
   align-items: center;
   align-content: stretch;
+  z-index: 999;
+}
+
+.footer{
+  background-color: #2d2d2d;
 }
 
 .row {
   width: 100%;
   height: auto;
-  background-color: blueviolet;
-  margin-top: -30px;
-  min-height: 675px;
+  background-color: #2d2d2d;
+
+  min-height: 867px;
   height: auto;
 }
 
 .home {
   background-color: #2d2d2d;
+  height: 2460px;
+  margin-top: -30px;
   /* padding: 5%;
   width: 60%;
   margin-left: 15%;
@@ -134,17 +143,17 @@ ul {
   color: #e35200;
 }
 
-#search {
-  border: 1px solid #e36a00;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  width: 400px;
-  height: 50px;
-  background-color: #ffffff;
-  color: #9dbfaf;
-  padding: 5px;
-  font-size: large;
+.search {
+  border: 1px solid #e36a00 !important;
+  border-right: none !important;
+  border-radius: 5px 0 0 5px !important;
+  outline: none !important;
+  width: 400px !important;
+  height: 50px !important;
+  background-color: #ffffff !important;
+  color: #9dbfaf !important;
+  padding: 5px !important;
+  font-size: large !important;
 
   /* padding-left: 10px; */
 }
@@ -305,6 +314,7 @@ ul {
 }
 
 .labels {
+  width: 100%;
   font-family: "Poppins", sans-serif;
   color: white;
   display: flex;
@@ -404,6 +414,7 @@ hpbooks {
   width: 260px;
   height: 360px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.42);
+  cursor: pointer;
 }
 
 .barrier {
@@ -415,7 +426,324 @@ hpbooks {
   width: 100%;
   box-sizing: border-box;
   padding: 5px;
+  cursor: pointer;
   /* background-color:olivedrab; */
   color: #e35200;
   text-decoration: none;
+}
+
+
+.card {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  transform: translate(205%, 40%);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 5;
+}
+
+.signup {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.inputBox1 {
+  position: relative;
+  width: 250px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+}
+
+.inputBox {
+  position: relative;
+  width: 250px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+}
+
+.inputBox1 input,
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  box-sizing: border-box;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox1 span,
+.inputBox span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox1 input:valid ~ span,
+.inputBox1 input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid,
+.inputBox1 input:focus,
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.enter:hover {
+  background-color: #e36a00;
+  color: white;
+}
+
+#signupoverlay,
+#loginoverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+#registercard,
+#logincard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  transform: translate(205%, 40%);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 5;
+}
+
+#shadowlayerr,
+#shadowlayerl {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  cursor: pointer;
+  margin-top: -50px;
+}
+
+.pagebox{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 5% 0%;
+  background-color: rgb(46, 78, 68);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.book-info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 50px;
+  width: 100%;
+  display: block;
+}
+
+.book-info-form {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 15px;
+  color: #dfe0df;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: rgba(10, 10, 10, 0.2) 0px 2px 8px 0px;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.notifcard {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  transform: translate(205%, 100%);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 5;
+}
+
+#notification {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+#shadowlayern {
+  margin-top: -50px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  cursor: pointer;
+}
+
+.book-image-reservation {
+width: 30%;
+box-sizing: border-box;
+border-radius: 15px;
+}
+
+.book-image-container {
+box-sizing: border-box;
+border-radius: 15px;
+padding: 15px;
+background-color: #ece4de;
+}
+
+.book-image {
+width: 100%;
+height: auto;
+}
+
+.reservation-button {
+margin-top: 10px;
+padding: 10px 20px;
+background-color: #e36a00;
+color: white;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+}
+
+.reservation-button:hover {
+background-color: #e35200;
+}
+
+.book-details {
+width: 60%;
+height: auto;
+padding: 15px;
+margin-left: 50px;
+box-sizing: border-box;
+color: #1f1f1f;
+border-radius: 15px;
+background: rgb(240, 240, 240);
+background: linear-gradient(140deg, rgba(240, 240, 240, 1) 66%, rgba(255, 232, 211, 1) 100%);
+}
+
+.book-details > div {
+margin: 10px 0;
+}
+
+.book-details h2 {
+font-size: 20px;
+margin: 0;
+font-weight: 500;
+}
+
+.book-details p {
+font-size: 18px;
+margin: 0;
+word-spacing: 8px;
+}
+
+.comment-box{
+  width: 90%;
+  margin-top: 90px;
+  background-color: rgb(34, 34, 34);
+  padding: 5%;
+  border-radius: 15px;
+  box-shadow: rgba(10, 10, 10, 0.2) 0px 2px 8px 0px;
 }
