@@ -1,5 +1,6 @@
 import React from "react";
 import MultiSelect from "../MultiSelect";
+import { FaFilter } from "react-icons/fa6";
 const Browse = () => {
   const count = 20;
   const items = Array.from({ length: count }, (_, index) => index + 1);
@@ -10,12 +11,12 @@ const Browse = () => {
   const franchiseOptions = ["Stand Alone", "Series"];
   const audienceOptions = ["Kids", "Teens", "Adults", "Family"];
   const availabilityOptions = ["In Stock", "Out of Stock"];
-  // const publisherOptions = [
-  //   "Penguin",
-  //   "HarperCollins",
-  //   "Simon & Schuster",
-  //   "Macmillan",
-  // ];
+  const publisherOptions = [
+    "Penguin",
+    "HarperCollins",
+    "Simon & Schuster",
+    "Macmillan",
+  ];
 
   return (
     <div>
@@ -53,7 +54,7 @@ const Browse = () => {
             <MultiSelect label="Availability" options={availabilityOptions} />
           </div>
           <div className="filtercrit">
-            <button className="filter"><i class="fa-solid fa-filter"></i>Filter</button>
+            <button className="filter"><div className="fbutton"><FaFilter /></div>Filter</button>
           </div>
           {/* <div className="filtercrit">
             <MultiSelect label="Publisher" options={publisherOptions} />

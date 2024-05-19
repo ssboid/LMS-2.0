@@ -885,4 +885,12 @@ hpbooks {
   color: white;
   font-size: large;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fbutton{
+ margin-right: 20px;
+ margin-top: 5px;
 }
