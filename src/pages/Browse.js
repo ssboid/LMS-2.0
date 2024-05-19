@@ -9,7 +9,86 @@ const Browse = () => {
       <div className="pagebox">
         <div className="filterbox">
           <div className="filtercrit">
-            a
+            <label>Genre</label>
+            <select name="Genre" id="genre" className="custom-dropdown" multiple data-multi-select>
+            <option value="" disabled selected hidden>All</option>
+              <option value="volvo">1</option>
+              <option value="saab">2</option>
+              <option value="mercedes">3</option>
+              <option value="audi">4</option>
+            </select>
+          </div>
+          <div className="filtercrit">
+          <label>Language</label>
+            <select name="Language" id="language" className="custom-dropdown" multiple data-multi-select>
+            <option value="" disabled selected hidden>All</option>
+              <option value="volvo">1</option>
+              <option value="saab">2</option>
+              <option value="mercedes">3</option>
+              <option value="audi">4</option>
+            </select>
+          </div>
+          <div className="filtercrit">
+          <label>Rating</label>
+            <select name="Rating" id="rating" className="custom-dropdown" multiple data-multi-select>
+            <option value="" disabled selected hidden>All</option>
+              <option value="volvo">1</option>
+              <option value="saab">2</option>
+              <option value="mercedes">3</option>
+              <option value="audi">4</option>
+            </select>
+          </div>
+          <div className="filtercrit">
+          <label>Franchise</label>
+            <select name="Franchise" id="Franchise" className="custom-dropdown" multiple data-multi-select> 
+            <option value="" disabled selected hidden>All</option>
+              <option value="volvo">1</option>
+              <option value="saab">2</option>
+              <option value="mercedes">3</option>
+              <option value="audi">4</option>
+            </select>
+          </div>
+          <div className="filtercrit">
+          <label>Audience</label>
+            <select name="Audience" id="Audience" className="custom-dropdown" multiple data-multi-select>
+            <option value="" disabled selected hidden>All</option>
+              <option value="volvo">1</option>
+              <option value="saab">2</option>
+              <option value="mercedes">3</option>
+              <option value="audi">4</option>
+            </select>
+          </div>
+          <div className="filtercrit">
+          <label>Availabilty</label>
+            <select name="availability" id="availability" className="custom-dropdown" multiple data-multi-select>
+            <option value="" disabled selected hidden>All</option>
+              <option value="volvo">1</option>
+              <option value="saab">2</option>
+              <option value="mercedes">3</option>
+              <option value="audi">4</option>
+            </select>
+          </div>
+          <div className="filtercrit">
+          <label>Publisher</label>
+            <select name="Publisher" id="publisher" className="custom-dropdown" >
+            <option value="" disabled selected hidden>All</option>
+              <option value="volvo">1</option>
+              <option value="saab">2</option>
+              <option value="mercedes">3</option>
+              <option value="audi">4</option>
+            </select>
+          </div>
+          <div className="filtercrit">
+            <label>Search</label>
+            <input
+              type="search"
+              name="query"
+              className="search-input"
+              placeholder="Search..."
+            />
+            <button type="" className="search-button">
+              <i className="sear fas fa-search sear"></i>
+            </button>
           </div>
         </div>
         <div className="browsing">
