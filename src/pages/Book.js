@@ -1,19 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import b1984 from "../assets/bookimages/b1984.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Book = () => {
   const [notificationVisible, setNotificationVisible] = useState(false);
+  const notify = () => toast("Wow so easy!");
+  useEffect(() => {
+    // Append Facebook SDK script
+    const script = document.createElement("script");
+    script.async = true;
+    script.defer = true;
+    script.crossOrigin = "anonymous";
+    script.src =
+      "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0";
+    script.nonce = "EWSc9Spy";
+    document.body.appendChild(script);
 
-  const showNotification = () => {
-    setNotificationVisible(true);
-  };
-
-  const hideNotification = () => {
-    setNotificationVisible(false);
-  };
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div>
+      <div id="fb-root"></div>
+      <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+        nonce="logKe7bG"
+      ></script>
       <div className="pagebox">
         <div className="book-info-box">
           <div className="book-info-form">
@@ -22,24 +40,52 @@ const Book = () => {
                 <img src={b1984} alt="1984" className="book-image" />
               </div>
               <div className="rating-stars">
-                <input type="radio" name="rating" id="rs0" defaultChecked />
-                <label htmlFor="rs0"></label>
-                <input type="radio" name="rating" id="rs1" />
-                <label htmlFor="rs1"></label>
-                <input type="radio" name="rating" id="rs2" />
-                <label htmlFor="rs2"></label>
-                <input type="radio" name="rating" id="rs3" />
-                <label htmlFor="rs3"></label>
-                <input type="radio" name="rating" id="rs4" />
-                <label htmlFor="rs4"></label>
-                <input type="radio" name="rating" id="rs5" />
-                <label htmlFor="rs5"></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rs0"
+                  defaultChecked
+                  className="inputstar"
+                />
+                <label htmlFor="rs0" className="labelstar"></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rs1"
+                  className="inputstar"
+                />
+                <label htmlFor="rs1" className="labelstar"></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rs2"
+                  className="inputstar"
+                />
+                <label htmlFor="rs2" className="labelstar"></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rs3"
+                  className="inputstar"
+                />
+                <label htmlFor="rs3" className="labelstar"></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rs4"
+                  className="inputstar"
+                />
+                <label htmlFor="rs4" className="labelstar"></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rs5"
+                  className="inputstar"
+                />
+                <label htmlFor="rs5" className="labelstar"></label>
               </div>
-              <a
-                href="#"
-                className="reservation-button"
-                onClick={showNotification}
-              >
+
+              <a href="" className="reservation-button" onClick={notify}>
                 Add to wish list
               </a>
             </div>
@@ -86,18 +132,15 @@ const Book = () => {
             </div>
           </div>
 
-          {notificationVisible && (
-            <div className="container" id="notification">
-              <div className="notifcard" id="registercard">
-                <br />
-                <a className="signup">Book Added to the wishlist!</a>
-                <button className="enter" onClick={hideNotification}>
-                  OK
-                </button>
-              </div>
-              <div id="shadowlayern" onClick={hideNotification}></div>
-            </div>
-          )}
+          <div className="comment-box">
+            <div
+              class="fb-comments"
+              data-href="http://localhost:3000/book"
+              data-width="100%"
+              data-numposts="5"
+              data-colorscheme="dark"
+            ></div>
+          </div>
         </div>
       </div>
     </div>

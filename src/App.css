@@ -597,6 +597,9 @@ hpbooks {
   margin-right: 15%;
   padding: 5% 0%;
   background-color: rgb(46, 78, 68);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .book-info-box {
@@ -606,6 +609,7 @@ hpbooks {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
   width: 100%;
+  display: block;
 }
 
 .book-info-form {
@@ -682,7 +686,6 @@ border-radius: 15px;
 box-sizing: border-box;
 border-radius: 15px;
 padding: 15px;
-margin-bottom: 30px;
 background-color: #ece4de;
 }
 
@@ -736,3 +739,11 @@ margin: 0;
 word-spacing: 8px;
 }
 
+.comment-box{
+  width: 90%;
+  margin-top: 90px;
+  background-color: rgb(34, 34, 34);
+  padding: 5%;
+  border-radius: 15px;
+  box-shadow: rgba(10, 10, 10, 0.2) 0px 2px 8px 0px;
+}

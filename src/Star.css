@@ -1,7 +1,7 @@
 /* stars */
 .rating-stars {
-	width: 50vmin;
-	padding: 1.75vmin 10vmin 2vmin 3vmin;
+	width: 32vmin;
+	padding: 3vmin;
 	border-radius: 5vmin;
 }
 
@@ -10,11 +10,11 @@
 	transition: all 0.25s ease 0s;	
 }
 
+.inputstar { 
+	display: none; 
+}
 
-
-input { display: none; }
-
-label {
+.labelstar {
 	width: 5vmin;
 	height: 5vmin;
 	background: #000b;
@@ -25,11 +25,11 @@ label {
 	clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
 }
 
-label[for=rs0] {
+.labelstar[for=rs0] {
 	display: none;
 }
 
-label:before {
+.labelstar:before {
 	width: 90%;
 	height: 90%;
 	content: "";
@@ -44,22 +44,18 @@ label:before {
 	background-position: 0 0;
 }
 
-label:hover:before {
+.labelstar:hover:before {
 	transition: all 0.25s ease 0s;		
 }
 
-input:checked + label ~ label:before {
+.inputstar:checked + .labelstar ~ .labelstar:before {
 	background-position: 100% 0;
 	transition: all 0.25s ease 0s;	
 }
 
-input:checked + label ~ label:hover:before {
+.inputstar:checked + .labelstar ~ .labelstar:hover:before {
 	background-position: 0% 0
 }
-
-
-
-
 
 #rs1:checked ~ .rating-counter:before {
 	content: "1";
@@ -81,16 +77,12 @@ input:checked + label ~ label:hover:before {
 	content: "5";
 }
 
-label + input:checked ~ .rating-counter:before {
+.labelstar + .inputstar:checked ~ .rating-counter:before {
 	color: #ffab00 !important;
 	transition: all 0.25s ease 0s;
 }
 
-
-
-
-
-label:hover ~ .rating-counter:before {
+.labelstar:hover ~ .rating-counter:before {
 	color: #9aacc6 !important;
 	transition: all 0.5s ease 0s;	
 	animation: pulse 1s ease 0s infinite;
@@ -100,28 +92,27 @@ label:hover ~ .rating-counter:before {
 	  50% { font-size: 6.25vmin; }
 }
 
-label[for=rs1]:hover ~ .rating-counter:before {
+.labelstar[for=rs1]:hover ~ .rating-counter:before {
 	content: "1" !important;
 }
 
-label[for=rs2]:hover ~ .rating-counter:before {
+.labelstar[for=rs2]:hover ~ .rating-counter:before {
 	content: "2" !important;
 }
 
-label[for=rs3]:hover ~ .rating-counter:before {
+.labelstar[for=rs3]:hover ~ .rating-counter:before {
 	content: "3" !important;
 }
 
-label[for=rs4]:hover ~ .rating-counter:before {
+.labelstar[for=rs4]:hover ~ .rating-counter:before {
 	content: "4" !important;
 }
 
-label[for=rs5]:hover ~ .rating-counter:before {
+.labelstar[for=rs5]:hover ~ .rating-counter:before {
 	content: "5" !important;
 }
 
-
-input:checked:hover ~ .rating-counter:before {
+.inputstar:checked:hover ~ .rating-counter:before {
 	animation: none !important;
 	color: #ffab00 !important ;
 }
