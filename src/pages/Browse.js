@@ -10,7 +10,7 @@ const Browse = () => {
         <div className="filterbox">
           <div className="filtercrit">
             <label>Genre</label>
-            <select name="Genre" id="genre" className="custom-dropdown" multiple data-multi-select>
+            <select name="Genre" id="genre" className="custom-dropdown" >
             <option value="" disabled selected hidden>All</option>
               <option value="volvo">1</option>
               <option value="saab">2</option>
@@ -20,7 +20,7 @@ const Browse = () => {
           </div>
           <div className="filtercrit">
           <label>Language</label>
-            <select name="Language" id="language" className="custom-dropdown" multiple data-multi-select>
+            <select name="Language" id="language" className="custom-dropdown">
             <option value="" disabled selected hidden>All</option>
               <option value="volvo">1</option>
               <option value="saab">2</option>
@@ -30,7 +30,7 @@ const Browse = () => {
           </div>
           <div className="filtercrit">
           <label>Rating</label>
-            <select name="Rating" id="rating" className="custom-dropdown" multiple data-multi-select>
+            <select name="Rating" id="rating" className="custom-dropdown">
             <option value="" disabled selected hidden>All</option>
               <option value="volvo">1</option>
               <option value="saab">2</option>
@@ -40,7 +40,7 @@ const Browse = () => {
           </div>
           <div className="filtercrit">
           <label>Franchise</label>
-            <select name="Franchise" id="Franchise" className="custom-dropdown" multiple data-multi-select> 
+            <select name="Franchise" id="Franchise" className="custom-dropdown">
             <option value="" disabled selected hidden>All</option>
               <option value="volvo">1</option>
               <option value="saab">2</option>
@@ -50,7 +50,7 @@ const Browse = () => {
           </div>
           <div className="filtercrit">
           <label>Audience</label>
-            <select name="Audience" id="Audience" className="custom-dropdown" multiple data-multi-select>
+            <select name="Audience" id="Audience" className="custom-dropdown">
             <option value="" disabled selected hidden>All</option>
               <option value="volvo">1</option>
               <option value="saab">2</option>
@@ -60,7 +60,7 @@ const Browse = () => {
           </div>
           <div className="filtercrit">
           <label>Availabilty</label>
-            <select name="availability" id="availability" className="custom-dropdown" multiple data-multi-select>
+            <select name="availability" id="availability" className="custom-dropdown">
             <option value="" disabled selected hidden>All</option>
               <option value="volvo">1</option>
               <option value="saab">2</option>
@@ -70,7 +70,7 @@ const Browse = () => {
           </div>
           <div className="filtercrit">
           <label>Publisher</label>
-            <select name="Publisher" id="publisher" className="custom-dropdown" >
+            <select name="Publisher" id="publisher" className="custom-dropdown">
             <option value="" disabled selected hidden>All</option>
               <option value="volvo">1</option>
               <option value="saab">2</option>
