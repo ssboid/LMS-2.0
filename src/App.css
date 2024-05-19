@@ -22,6 +22,7 @@
 }
 
 .footer {
+.footer {
   background-color: #2d2d2d;
 }
 
@@ -443,6 +444,7 @@ hpbooks {
   transform: translate(205%, 40%);
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: 5;
 }
 
@@ -459,12 +461,14 @@ hpbooks {
   position: relative;
   width: 250px;
   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
 }
 
 .inputBox {
   position: relative;
   width: 250px;
+  font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
 }
@@ -536,6 +540,7 @@ hpbooks {
   letter-spacing: 2px;
   margin-bottom: 3em;
   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .enter:hover {
@@ -570,6 +575,7 @@ hpbooks {
   transform: translate(205%, 40%);
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: 5;
 }
 
@@ -588,13 +594,16 @@ hpbooks {
 }
 
 .pagebox {
+.pagebox {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
   padding: 5% 0%;
   /* background-color: rgb(46, 78, 68); */
+  /* background-color: rgb(46, 78, 68); */
   display: flex;
   flex-direction: column;
+  align-items: center;
   align-items: center;
 }
 
@@ -603,12 +612,14 @@ hpbooks {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 50px;
   width: 100%;
   display: block;
 }
 
 .book-info-form {
+  background-color: rgb(233, 233, 233);
   background-color: rgb(233, 233, 233);
   display: flex;
   justify-content: center;
@@ -625,6 +636,7 @@ hpbooks {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
   margin-bottom: 50px;
   width: 100%;
@@ -643,6 +655,7 @@ hpbooks {
   background: #e3e3e3;
   transform: translate(205%, 100%);
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
   z-index: 5;
 }
@@ -676,6 +689,9 @@ hpbooks {
   width: 30%;
   box-sizing: border-box;
   border-radius: 15px;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .book-image-container {
@@ -683,9 +699,15 @@ hpbooks {
   border-radius: 15px;
   padding: 15px;
   background-color: #ece4de;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #ece4de;
 }
 
 .book-image {
+  width: 100%;
+  height: auto;
   width: 100%;
   height: auto;
 }
@@ -701,9 +723,20 @@ hpbooks {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e36a00;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 .reservation-button:hover {
+  background-color: #e35200;
   background-color: #e35200;
 }
 
@@ -721,13 +754,30 @@ hpbooks {
     rgba(240, 240, 240, 1) 66%,
     rgba(255, 232, 211, 1) 100%
   );
+  width: 60%;
+  height: auto;
+  padding: 15px;
+  margin-left: 50px;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  border-radius: 15px;
+  background: rgb(240, 240, 240);
+  background: linear-gradient(
+    140deg,
+    rgba(240, 240, 240, 1) 66%,
+    rgba(255, 232, 211, 1) 100%
+  );
 }
 
 .book-details > div {
   margin: 10px 0;
+  margin: 10px 0;
 }
 
 .book-details h2 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
   font-size: 20px;
   margin: 0;
   font-weight: 500;
@@ -737,11 +787,16 @@ hpbooks {
   font-size: 18px;
   margin: 0;
   word-spacing: 8px;
+  font-size: 18px;
+  margin: 0;
+  word-spacing: 8px;
 }
 
 .comment-box {
+.comment-box {
   width: 90%;
   margin-top: 90px;
+  background-color: rgb(233, 233, 233);
   background-color: rgb(233, 233, 233);
   padding: 5%;
   border-radius: 15px;

@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from "react";
 import b1984 from "../assets/bookimages/b1984.png";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Swal from 'sweetalert2';
 
 const Book = () => {
   const [notificationVisible, setNotificationVisible] = useState(false);
-  const notify = () => Swal.fire({
-    title: "Good job!",
-    text: "You clicked the button!",
-    icon: "success"
-  });
-  
 
   useEffect(() => {
     // Append Facebook SDK script
@@ -28,6 +20,18 @@ const Book = () => {
       document.body.removeChild(script);
     };
   }, []);
+
+  const notify = () => Swal.fire({
+    title: "Added to Wishlist!",
+    text: "Added to Wishlist!",
+    icon: "success",
+    confirmButtonColor: "#e36a00"
+  });
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    notify();
+  };
 
   return (
     <div>
@@ -92,18 +96,18 @@ const Book = () => {
                 <label htmlFor="rs5" className="labelstar"></label>
               </div>
 
-              <a  className="reservation-button" onClick={notify}>
+              <a href="#" onClick={handleClick} className="reservation-button">
                 Add to wish list
               </a>
             </div>
             <div className="book-details">
               <div>
                 <h2>Title</h2>
-                <p>Dummy Book Title</p>
+                <p>1984</p>
               </div>
               <div>
                 <h2>Author</h2>
-                <p>Dummy Author</p>
+                <p>George Orwell</p>
               </div>
               <div>
                 <h2>ISBN</h2>
@@ -111,15 +115,15 @@ const Book = () => {
               </div>
               <div>
                 <h2>Publisher</h2>
-                <p>Dummy Publisher</p>
+                <p>Secker & Warburg</p>
               </div>
               <div>
                 <h2>Publication Year</h2>
-                <p>2023</p>
+                <p>1949</p>
               </div>
               <div>
                 <h2>Genre</h2>
-                <p>Fiction</p>
+                <p>Dystopian, political fiction, social science, fiction</p>
               </div>
               <div>
                 <h2>Language</h2>
@@ -132,14 +136,27 @@ const Book = () => {
               <div>
                 <h2>Synopsis</h2>
                 <p>
-                  This is a dummy synopsis of the book. It provides a brief
-                  description of the book's content.
+                  Nineteen Eighty-Four also published as 1984 is a dystopian
+                  novel and cautionary tale by English writer George Orwell. It
+                  was published on 8 June 1949 by Secker & Warburg as Orwell's
+                  ninth and final book completed in his lifetime. Thematically,
+                  it centres on the consequences of totalitarianism, mass
+                  surveillance, and repressive regimentation of people and
+                  behaviours within society. Orwell, a staunch believer in
+                  democratic socialism and member of the anti-Stalinist Left,
+                  modelled the Britain under authoritarian socialism in the
+                  novel on the Soviet Union in the era of Stalinism and on the
+                  very similar practices of both censorship and propaganda in
+                  Nazi Germany.More broadly, the novel examines the role of
+                  truth and facts within societies and the ways in which they
+                  can be manipulated.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="comment-box">
+            <h1>Comments</h1><hr></hr>
             <div
             style={{color: "white !important"}}
               class="fb-comments"
