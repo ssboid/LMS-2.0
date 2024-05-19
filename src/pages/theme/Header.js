@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import LMB from "../../assets/brand/LMB.png";
 
@@ -8,8 +8,8 @@ const Header = () => {
   const [isLoginVisible, setIsLoginVisible] = useState(false);
 
   const logout = () => {
-    localStorage.removeItem('isLogin');
-    navigate('/login');
+    localStorage.removeItem("isLogin");
+    navigate("/login");
   };
 
   const showSignupOverlay = () => {
@@ -35,8 +35,14 @@ const Header = () => {
           <div className="one">
             <Link to="/" className="link">
               <ul>
-                <li><img src={LMB} id="logo" alt="Logo" /></li>
-                <li id="name">LIBRI<br /><span id="mahiti">MAHITI</span></li>
+                <li>
+                  <img src={LMB} id="logo" alt="Logo" />
+                </li>
+                <li id="name">
+                  LIBRI
+                  <br />
+                  <span id="mahiti">MAHITI</span>
+                </li>
               </ul>
             </Link>
           </div>
@@ -44,18 +50,41 @@ const Header = () => {
             <ul>
               <div className="twoset">
                 <Link to="/browse" className="link">
-                  <li className="browselink browse"><span>BROWSE</span></li>
+                  <li className="browselink browse">
+                    <span>BROWSE</span>
+                  </li>
                 </Link>
                 <li>
                   <form>
-                    <input type="search" name="query" className="search" placeholder="Search..." />
-                    <Link to="/search" className="link"><button type="" className="search_button"><i className="sear fas fa-search sear"></i></button></Link>
+                    <input
+                      type="search"
+                      name="query"
+                      className="search"
+                      placeholder="Search..."
+                    />
+                    <Link to="/search" className="link">
+                      <button type="" className="search_button">
+                        <i className="sear fas fa-search sear"></i>
+                      </button>
+                    </Link>
                   </form>
                 </li>
               </div>
               <div className="toshow">
-                <li id="signupsignup" className="headlink" onClick={showSignupOverlay}>SIGN UP</li>
-                <li className="headlink" id="loginlogin" onClick={showLoginOverlay}>LOGIN</li>
+                <li
+                  id="signupsignup"
+                  className="headlink"
+                  onClick={showSignupOverlay}
+                >
+                  SIGN UP
+                </li>
+                <li
+                  className="headlink"
+                  id="loginlogin"
+                  onClick={showLoginOverlay}
+                >
+                  LOGIN
+                </li>
               </div>
             </ul>
           </div>
@@ -63,7 +92,11 @@ const Header = () => {
       </div>
 
       {isSignupVisible && (
-        <div className="container" id="signupoverlay" style={{ display: 'block' }}>
+        <div
+          className="container"
+          id="signupoverlay"
+          style={{ display: "block" }}
+        >
           <div className="card" id="registercard">
             <br />
             <form action="user?page=register" method="post">
@@ -88,7 +121,11 @@ const Header = () => {
       )}
 
       {isLoginVisible && (
-        <div className="container" id="loginoverlay" style={{ display: 'block' }}>
+        <div
+          className="container"
+          id="loginoverlay"
+          style={{ display: "block" }}
+        >
           <div className="card" id="logincard">
             <a className="login">Log in</a>
             <form action="user?page=login" method="post">

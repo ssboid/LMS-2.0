@@ -22,7 +22,6 @@
 }
 
 .footer {
-.footer {
   background-color: #2d2d2d;
 }
 
@@ -593,7 +592,7 @@ hpbooks {
   margin-top: -50px;
 }
 
-.pagebox {
+
 .pagebox {
   width: 70%;
   margin-left: 15%;
@@ -793,7 +792,6 @@ hpbooks {
 }
 
 .comment-box {
-.comment-box {
   width: 90%;
   margin-top: 90px;
   background-color: rgb(233, 233, 233);
@@ -817,22 +815,26 @@ hpbooks {
   justify-content: flex-start;
   align-content: flex-start;
   background-color: #1f1f1f;
-  width: 92%;
+  border-radius: 5px;
+  width: 90%;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 10px;
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
 }
 
 .filtercrit{
-  background-color: rgb(99, 99, 99);
-  margin: 10px;
+  background-color: rgb(46, 46, 46);
+  /* margin: 10px; */
   padding: 10px;
   box-sizing: border-box;
   color: #e4e4e4;
   border-radius: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -853,42 +855,34 @@ hpbooks {
   margin-bottom: 10px;
 }
 
+.browsesearchbox{
+  width: 200px;
+  margin-top: -9px;
+}
 
-/* Remove default styling
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
+.search-input{
+  margin-top: 10px;
+  border: 1px solid #e36a00 !important;
+  border-radius: 5px;
+  outline: none !important;
+  height: 47px !important;
+  background-color: #353535;
+  color: #9dbfaf !important;
+  padding: 5px !important;
+  font-size: large !important;
+  width: 198px;
+  display: flex;
+  align-items: start;
+  display: inline;
+}
+
+.filter{
+  width: 200px;
+  height: 50px;
   border: none;
-  padding: 0;
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  outline: none;
-} */
-
-/* Optional: Add custom styling */
-select.custom-dropdown {
-  background-color: #fff; /* Background color */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 10px; /* Padding */
-  width: 100%; /* Width */
-  cursor: pointer; /* Pointer cursor */
-}
-
-/* Optional: Add custom arrow icon */
-select.custom-dropdown::-ms-expand {
-  display: none;
-}
-
-select.custom-dropdown::after {
-  content: '▼'; /* Custom arrow icon */
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
+  border-radius: 5px;
+  background-color: #e35200;
+  color: white;
+  font-size: large;
+  font-family: "Poppins", sans-serif;
 }

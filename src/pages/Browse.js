@@ -3,14 +3,19 @@ import MultiSelect from "../MultiSelect";
 const Browse = () => {
   const count = 20;
   const items = Array.from({ length: count }, (_, index) => index + 1);
-  
-  const genreOptions = ['Action', 'Comedy', 'Drama', 'Horror'];
-  const languageOptions = ['English', 'Nepali', 'Hindi', 'Japanese'];
-  const ratingOptions = ['G', 'PG', 'PG-13', 'R'];
-  const franchiseOptions = ['Marvel', 'DC', 'Star Wars', 'Harry Potter'];
-  const audienceOptions = ['Kids', 'Teens', 'Adults', 'Family'];
-  const availabilityOptions = ['In Stock', 'Out of Stock', 'Pre-order', 'Discontinued'];
-  const publisherOptions = ['Penguin', 'HarperCollins', 'Simon & Schuster', 'Macmillan'];
+
+  const genreOptions = ["Action", "Comedy", "Drama", "Horror"];
+  const languageOptions = ["English", "Nepali", "Hindi", "Japanese"];
+  const ratingOptions = ["0", "1+", "2+", "3+", "4+", "5"];
+  const franchiseOptions = ["Stand Alone", "Series"];
+  const audienceOptions = ["Kids", "Teens", "Adults", "Family"];
+  const availabilityOptions = ["In Stock", "Out of Stock"];
+  // const publisherOptions = [
+  //   "Penguin",
+  //   "HarperCollins",
+  //   "Simon & Schuster",
+  //   "Macmillan",
+  // ];
 
   return (
     <div>
@@ -26,30 +31,34 @@ const Browse = () => {
             <MultiSelect label="Rating" options={ratingOptions} />
           </div>
           <div className="filtercrit">
-            <MultiSelect label="Franchise" options={franchiseOptions} />
-          </div>
-          <div className="filtercrit">
-            <MultiSelect label="Audience" options={audienceOptions} />
-          </div>
-          <div className="filtercrit">
-          <label>Availabilty</label>
-            <MultiSelect label="Availability" options={availabilityOptions} />
-          </div>
-          <div className="filtercrit">
-            <MultiSelect label="Publisher" options={publisherOptions} />
-          </div>
-          <div className="filtercrit">
-            <label>Search</label>
+            <div className="browsesearchbox">
+            <label>Keyword</label>
+            <form>
             <input
               type="search"
               name="query"
               className="search-input"
               placeholder="Search..."
             />
-            <button type="" className="search-button">
-              <i className="sear fas fa-search sear"></i>
-            </button>
+            </form>
+            </div>
           </div>
+          <div className="filtercrit">
+            <MultiSelect label="Franchise" options={franchiseOptions} />
+          </div>
+          <div className="filtercrit">
+            <MultiSelect label="Audience" options={audienceOptions} />
+          </div>
+          <div className="filtercrit">
+            <MultiSelect label="Availability" options={availabilityOptions} />
+          </div>
+          <div className="filtercrit">
+            <button className="filter"><i class="fa-solid fa-filter"></i>Filter</button>
+          </div>
+          {/* <div className="filtercrit">
+            <MultiSelect label="Publisher" options={publisherOptions} />
+          </div> */}
+          
         </div>
         <div className="browsing">
           {items.map((item, index) => (
