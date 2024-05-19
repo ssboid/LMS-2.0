@@ -2,10 +2,17 @@ import React, { useState, useEffect } from "react";
 import b1984 from "../assets/bookimages/b1984.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Swal from 'sweetalert2';
 
 const Book = () => {
   const [notificationVisible, setNotificationVisible] = useState(false);
-  const notify = () => toast("Wow so easy!");
+  const notify = () => Swal.fire({
+    title: "Good job!",
+    text: "You clicked the button!",
+    icon: "success"
+  });
+  
+
   useEffect(() => {
     // Append Facebook SDK script
     const script = document.createElement("script");
@@ -85,7 +92,7 @@ const Book = () => {
                 <label htmlFor="rs5" className="labelstar"></label>
               </div>
 
-              <a href="" className="reservation-button" onClick={notify}>
+              <a  className="reservation-button" onClick={notify}>
                 Add to wish list
               </a>
             </div>
@@ -134,6 +141,7 @@ const Book = () => {
 
           <div className="comment-box">
             <div
+            style={{color: "white !important"}}
               class="fb-comments"
               data-href="http://localhost:3000/book"
               data-width="100%"

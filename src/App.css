@@ -1,9 +1,7 @@
-
 .pagehead {
   width: 100%;
   height: 80px;
   background-color: #2d2d2d;
-  
 }
 
 .header {
@@ -23,7 +21,7 @@
   z-index: 999;
 }
 
-.footer{
+.footer {
   background-color: #2d2d2d;
 }
 
@@ -44,7 +42,6 @@
   width: 60%;
   margin-left: 15%;
   margin-right: 15%; */
-  
 }
 
 #logo {
@@ -432,7 +429,6 @@ hpbooks {
   text-decoration: none;
 }
 
-
 .card {
   position: fixed;
   display: flex;
@@ -446,7 +442,7 @@ hpbooks {
   background: #e3e3e3;
   transform: translate(205%, 40%);
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: 5;
 }
 
@@ -462,14 +458,14 @@ hpbooks {
 .inputBox1 {
   position: relative;
   width: 250px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
 }
 
 .inputBox {
   position: relative;
   width: 250px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
 }
 
@@ -539,7 +535,7 @@ hpbooks {
   font-size: 10px;
   letter-spacing: 2px;
   margin-bottom: 3em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .enter:hover {
@@ -573,7 +569,7 @@ hpbooks {
   background: #e3e3e3;
   transform: translate(205%, 40%);
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: 5;
 }
 
@@ -591,29 +587,29 @@ hpbooks {
   margin-top: -50px;
 }
 
-.pagebox{
+.pagebox {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
   padding: 5% 0%;
-  background-color: rgb(46, 78, 68);
+  /* background-color: rgb(46, 78, 68); */
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 .book-info-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 50px;
   width: 100%;
   display: block;
 }
 
 .book-info-form {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(233, 233, 233);
   display: flex;
   justify-content: center;
   font-size: 18px;
@@ -629,7 +625,7 @@ hpbooks {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 50px;
   width: 100%;
 }
@@ -647,7 +643,7 @@ hpbooks {
   background: #e3e3e3;
   transform: translate(205%, 100%);
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: 5;
 }
 
@@ -677,73 +673,167 @@ hpbooks {
 }
 
 .book-image-reservation {
-width: 30%;
-box-sizing: border-box;
-border-radius: 15px;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .book-image-container {
-box-sizing: border-box;
-border-radius: 15px;
-padding: 15px;
-background-color: #ece4de;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #ece4de;
 }
 
 .book-image {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .reservation-button {
-margin-top: 10px;
-padding: 10px 20px;
-background-color: #e36a00;
-color: white;
-border: none;
-border-radius: 15px;
-cursor: pointer;
-font-size: 16px;
-font-family: 'Poppins', sans-serif;
-text-decoration: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e36a00;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 .reservation-button:hover {
-background-color: #e35200;
+  background-color: #e35200;
 }
 
 .book-details {
-width: 60%;
-height: auto;
-padding: 15px;
-margin-left: 50px;
-box-sizing: border-box;
-color: #1f1f1f;
-border-radius: 15px;
-background: rgb(240, 240, 240);
-background: linear-gradient(140deg, rgba(240, 240, 240, 1) 66%, rgba(255, 232, 211, 1) 100%);
+  width: 60%;
+  height: auto;
+  padding: 15px;
+  margin-left: 50px;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  border-radius: 15px;
+  background: rgb(240, 240, 240);
+  background: linear-gradient(
+    140deg,
+    rgba(240, 240, 240, 1) 66%,
+    rgba(255, 232, 211, 1) 100%
+  );
 }
 
 .book-details > div {
-margin: 10px 0;
+  margin: 10px 0;
 }
 
 .book-details h2 {
-font-size: 20px;
-margin: 0;
-font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
 }
 
 .book-details p {
-font-size: 18px;
-margin: 0;
-word-spacing: 8px;
+  font-size: 18px;
+  margin: 0;
+  word-spacing: 8px;
 }
 
-.comment-box{
+.comment-box {
   width: 90%;
   margin-top: 90px;
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(233, 233, 233);
   padding: 5%;
   border-radius: 15px;
   box-shadow: rgba(10, 10, 10, 0.2) 0px 2px 8px 0px;
+}
+
+.browsing{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-left: 45px;
+}
+
+.filterbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  background-color: #1f1f1f;
+  width: 92%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.filtercrit{
+  background-color: rgb(99, 99, 99);
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #e4e4e4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.browsingcell {
+  height: 350px;
+  width: 231px;
+  background-color: rgb(31, 31, 31);
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #e36a00;
+  border-radius: 5px;
+}
+
+.browsedimage{
+  margin-bottom: 10px;
+}
+
+
+/* Remove default styling
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+} */
+
+/* Optional: Add custom styling */
+select.custom-dropdown {
+  background-color: #fff; /* Background color */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding */
+  width: 100%; /* Width */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Optional: Add custom arrow icon */
+select.custom-dropdown::-ms-expand {
+  display: none;
+}
+
+select.custom-dropdown::after {
+  content: '▼'; /* Custom arrow icon */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
